@@ -64,6 +64,19 @@ export const productImages: Record<string, string> = {
   'glow': glow,
   'ghk-cu': ghkCu,
   'epithalon': epithalon,
+  
+  // Batch 3
+  'dsip': dsip,
+  'cjc-1295': cjc1295,
+  'cjc-1295-dac': cjc1295,
+  'cjc-1295-ipamorelin': cjc1295Ipamorelin,
+  'cjc-no-dac-ipamorelin': cjc1295Ipamorelin,
+  'cagrilintide': cagrilintide,
+  'aod-9604': aod9604,
+  'aod9604': aod9604,
+  '5-amino-1mq': amino5_1mq,
+  '5amino-1mq': amino5_1mq,
+  'bpc-157': bpc157,
 };
 
 // Get product image by slug, falling back to placeholder
