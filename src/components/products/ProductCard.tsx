@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Product } from '@/data/products';
+import { getProductImage } from '@/data/productImages';
 import { useCart } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart } from 'lucide-react';
-import peptideVial from '@/assets/peptide-vial-placeholder.png';
 
 interface ProductCardProps {
   product: Product;
@@ -32,7 +32,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         {/* Product Image */}
         <div className="relative aspect-square bg-muted overflow-hidden">
           <img
-            src={peptideVial}
+            src={getProductImage(product.slug)}
             alt={product.name}
             className="w-full h-full object-contain p-4 transition-transform duration-300 group-hover:scale-105"
           />
