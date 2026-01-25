@@ -38,36 +38,37 @@ const Header = () => {
       {/* Main Navigation */}
       <nav className="bg-background border-b border-border">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2 text-foreground"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+          <div className="grid grid-cols-3 items-center h-16">
+            {/* Left Section - Mobile Menu / Desktop Navigation */}
+            <div className="flex items-center">
+              <button
+                className="lg:hidden p-2 text-foreground"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-label="Toggle menu"
+              >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-6">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="text-sm font-medium text-foreground hover:text-accent transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              <div className="hidden lg:flex items-center space-x-6">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
 
-            {/* Logo */}
-            <Link to="/" className="flex items-center">
+            {/* Center - Logo (always centered) */}
+            <Link to="/" className="flex items-center justify-center">
               <img src={logo} alt="BioMax Research" className="h-10 md:h-12 w-auto" />
             </Link>
 
             {/* Right Side Actions */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center justify-end space-x-4">
               <Link to="/admin" className="hidden lg:inline-flex">
                 <Button variant="outline" size="sm" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
                   Admin Panel
