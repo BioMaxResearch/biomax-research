@@ -8,10 +8,12 @@ import FeaturedProducts from '@/components/home/FeaturedProducts';
 import ResearchCTA from '@/components/home/ResearchCTA';
 import NewArrivals from '@/components/home/NewArrivals';
 import LabTestedSection from '@/components/home/LabTestedSection';
+import SEO from '@/components/SEO';
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO url="/" />
       <Header />
       <CartDrawer />
       

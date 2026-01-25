@@ -2,10 +2,16 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CartDrawer from '@/components/cart/CartDrawer';
 import { FlaskConical, Award, Shield, Users } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="About Us"
+        description="Learn about BioMax Research Peptides. We provide 99%+ purity research compounds with third-party lab testing and exceptional customer service."
+        url="/about"
+      />
       <Header />
       <CartDrawer />
       

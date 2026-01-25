@@ -6,6 +6,7 @@ import { FileText, Download, CheckCircle, FlaskConical, Shield, Award } from 'lu
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
+import SEO from '@/components/SEO';
 
 const LabResults = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -16,6 +17,11 @@ const LabResults = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Lab Results & Certificates"
+        description="View third-party lab results and Certificates of Analysis for all BioMax research peptides. 99%+ purity verified by HPLC and mass spectrometry."
+        url="/lab-results"
+      />
       <Header />
       <CartDrawer />
       

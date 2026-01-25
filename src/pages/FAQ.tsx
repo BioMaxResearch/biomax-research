@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Link } from 'react-router-dom';
+import SEO from '@/components/SEO';
 
 const faqCategories = [
   {
@@ -112,6 +113,11 @@ const faqCategories = [
 const FAQ = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Frequently Asked Questions"
+        description="Find answers to common questions about BioMax research peptides, ordering, shipping, returns, and storage. Get the information you need."
+        url="/faq"
+      />
       <Header />
       <CartDrawer />
       
