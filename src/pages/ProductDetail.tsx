@@ -4,11 +4,11 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CartDrawer from '@/components/cart/CartDrawer';
 import { getProductBySlug, products } from '@/data/products';
+import { getProductImage } from '@/data/productImages';
 import { useCart } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
 import { Minus, Plus, ShoppingCart, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react';
 import ProductGrid from '@/components/products/ProductGrid';
-import peptideVial from '@/assets/peptide-vial-placeholder.png';
 
 const ProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -98,7 +98,7 @@ const ProductDetail = () => {
               {/* Product Image */}
               <div className="bg-muted rounded-xl p-8 flex items-center justify-center">
                 <img
-                  src={peptideVial}
+                  src={getProductImage(product.slug)}
                   alt={product.name}
                   className="max-w-full max-h-96 object-contain"
                 />
@@ -281,7 +281,7 @@ const ProductDetail = () => {
               {/* Product Image */}
               <div className="bg-muted rounded-xl p-8 flex items-center justify-center">
                 <img
-                  src={peptideVial}
+                  src={getProductImage(product.slug)}
                   alt={product.name}
                   className="max-w-full max-h-80 object-contain"
                 />
