@@ -25,6 +25,7 @@ import {
 } from '@/components/ui/select';
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import SEO from '@/components/SEO';
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, 'Name is required').max(100, 'Name too long'),
@@ -66,6 +67,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Contact Us"
+        description="Contact BioMax Research Peptides. Get help with orders, product questions, or wholesale inquiries. We respond within 24-48 hours."
+        url="/contact"
+      />
       <Header />
       <CartDrawer />
       

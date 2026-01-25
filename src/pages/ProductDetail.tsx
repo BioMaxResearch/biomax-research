@@ -9,6 +9,7 @@ import { useCart } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
 import { Minus, Plus, ShoppingCart, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react';
 import ProductGrid from '@/components/products/ProductGrid';
+import SEO from '@/components/SEO';
 
 const ProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -64,6 +65,12 @@ const ProductDetail = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title={product.name}
+        description={`${product.name} research peptide. ${product.description.slice(0, 120)}... 99%+ purity, lab tested.`}
+        url={`/product/${product.slug}`}
+        type="product"
+      />
       <Header />
       <CartDrawer />
 

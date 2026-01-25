@@ -8,6 +8,7 @@ import { products, categories, getProductsByCategory, searchProducts } from '@/d
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search, SlidersHorizontal, X } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const Shop = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -55,6 +56,14 @@ const Shop = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title={currentCategory ? `${currentCategory.name} Peptides` : 'Shop Research Peptides'}
+        description={currentCategory 
+          ? `Browse our selection of ${currentCategory.name} research peptides. 99%+ purity, third-party tested. Fast shipping.`
+          : 'Shop premium research peptides with 99%+ purity. BPC-157, TB-500, Ipamorelin & more. Third-party lab tested.'
+        }
+        url={currentCategory ? `/shop?category=${currentCategory.slug}` : '/shop'}
+      />
       <Header />
       <CartDrawer />
 
