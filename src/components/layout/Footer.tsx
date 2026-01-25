@@ -7,13 +7,13 @@ const Footer = () => {
   const popularCategories = categories.slice(0, 6);
   
   const usefulLinks = [
-    { to: '/contact', label: 'Contact Us' },
     { to: '/about', label: 'About Us' },
+    { to: '/contact', label: 'Contact Us' },
+    { to: '/faq', label: 'FAQ' },
+    { to: '/lab-results', label: 'Lab Results' },
     { to: '/privacy', label: 'Privacy Policy' },
-    { to: '/disclaimer', label: 'Disclaimer' },
-    { to: '/refund', label: 'Refund Policy' },
     { to: '/terms', label: 'Terms of Service' },
-    { to: '/shipping', label: 'Shipping Policy' },
+    { to: '/refund', label: 'Refund Policy' },
   ];
 
   return (
