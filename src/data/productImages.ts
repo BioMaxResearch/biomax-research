@@ -25,6 +25,15 @@ import glow from '@/assets/products/glow.png';
 import ghkCu from '@/assets/products/ghk-cu.png';
 import epithalon from '@/assets/products/epithalon.png';
 
+// Batch 3
+import dsip from '@/assets/products/dsip.png';
+import cjc1295 from '@/assets/products/cjc-1295.png';
+import cjc1295Ipamorelin from '@/assets/products/cjc-1295-ipamorelin.png';
+import cagrilintide from '@/assets/products/cagrilintide.png';
+import aod9604 from '@/assets/products/aod-9604.png';
+import amino5_1mq from '@/assets/products/5-amino-1mq.png';
+import bpc157 from '@/assets/products/bpc-157.png';
+
 import peptideVialPlaceholder from '@/assets/peptide-vial-placeholder.png';
 
 // Map product slugs to their images
