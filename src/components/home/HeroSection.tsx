@@ -42,7 +42,7 @@ const HeroSection = () => {
               asChild
               variant="outline"
               size="lg"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="border-white text-white bg-white/10 hover:bg-white hover:text-primary"
             >
               <Link to="/lab-results">View Lab Results</Link>
             </Button>

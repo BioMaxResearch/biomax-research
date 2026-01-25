@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { FlaskConical, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { categories } from '@/data/products';
+import logo from '@/assets/logo.jpeg';
 
 const Footer = () => {
   const popularCategories = categories.slice(0, 6);
@@ -23,12 +24,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand Column */}
             <div className="space-y-4">
-              <Link to="/" className="flex items-center space-x-2">
-                <FlaskConical className="h-10 w-10 text-accent" />
-                <div className="flex flex-col">
-                  <span className="text-2xl font-bold leading-none">BioMax</span>
-                  <span className="text-xs text-primary-foreground/70 tracking-wider">PEPTIDES</span>
-                </div>
+              <Link to="/" className="inline-block">
+                <img src={logo} alt="BioMax Research" className="h-14 w-auto bg-white rounded-md p-1" />
               </Link>
               <div className="space-y-2 text-sm text-primary-foreground/80">
                 <div className="flex items-center gap-2">

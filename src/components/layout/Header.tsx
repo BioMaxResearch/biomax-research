@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Search, User, Menu, X, FlaskConical } from 'lucide-react';
+import { ShoppingCart, Search, User, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/CartContext';
+import logo from '@/assets/logo.jpeg';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -61,12 +62,8 @@ const Header = () => {
             </div>
 
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <FlaskConical className="h-8 w-8 text-accent" />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-primary leading-none">BioMax</span>
-                <span className="text-xs text-muted-foreground tracking-wider">PEPTIDES</span>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img src={logo} alt="BioMax Research" className="h-10 md:h-12 w-auto" />
             </Link>
 
             {/* Right Side Actions */}
