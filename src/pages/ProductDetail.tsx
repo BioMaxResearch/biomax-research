@@ -40,25 +40,6 @@ const ProductDetail = () => {
   const selectedVariant = product.variants[selectedVariantIndex];
   const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 5);
 
-  // Quantity discounts
-  const quantityDiscounts = [
-    { min: 1, max: 4, discount: 0, label: '1-4' },
-    { min: 5, max: 9, discount: 5, label: '5-9' },
-    { min: 10, max: 20, discount: 10, label: '10-20' },
-    { min: 21, max: Infinity, discount: 20, label: '21+' },
-  ];
-
-  const getDiscountedPrice = (basePrice: number, qty: number) => {
-    const tier = quantityDiscounts.find(t => qty >= t.min && qty <= t.max);
-    if (tier && tier.discount > 0) {
-      return basePrice * (1 - tier.discount / 100);
-    }
-    return basePrice;
-  };
-
-  const currentDiscount = quantityDiscounts.find(t => quantity >= t.min && quantity <= t.max);
-  const displayPrice = getDiscountedPrice(selectedVariant.price, quantity);
-
   const handleAddToCart = () => {
     addItem(product, selectedVariant, quantity);
   };
@@ -116,40 +97,8 @@ const ProductDetail = () => {
                 <h1 className="text-3xl font-bold text-foreground">{product.name}</h1>
                 
                 <p className="text-2xl font-bold text-accent">
-                  ${displayPrice.toFixed(2)}
-                  {currentDiscount && currentDiscount.discount > 0 && (
-                    <span className="ml-2 text-sm text-success">({currentDiscount.discount}% off)</span>
-                  )}
+                  ${selectedVariant.price.toFixed(2)}
                 </p>
-
-                {/* Quantity Discount Table */}
-                <div className="border border-border rounded-lg overflow-hidden">
-                  <table className="w-full text-sm">
-                    <thead className="bg-muted">
-                      <tr>
-                        <th className="px-4 py-2 text-left font-medium">Quantity</th>
-                        <th className="px-4 py-2 text-left font-medium">Price</th>
-                        <th className="px-4 py-2 text-left font-medium">Discount</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {quantityDiscounts.map((tier, index) => (
-                        <tr 
-                          key={index} 
-                          className={`border-t border-border ${
-                            quantity >= tier.min && quantity <= tier.max ? 'bg-accent/10' : ''
-                          }`}
-                        >
-                          <td className="px-4 py-2">{tier.label}</td>
-                          <td className="px-4 py-2 text-accent font-medium">
-                            ${getDiscountedPrice(selectedVariant.price, tier.min).toFixed(2)}
-                          </td>
-                          <td className="px-4 py-2">{tier.discount}%</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
 
                 {/* Variant Selection */}
                 {product.variants.length > 1 && (

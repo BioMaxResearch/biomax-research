@@ -38,45 +38,49 @@ import peptideVialPlaceholder from '@/assets/peptide-vial-placeholder.png';
 
 // Map product slugs to their images
 export const productImages: Record<string, string> = {
-  // Batch 1
+  // Bacteriostatic Water
   'bacteriostatic-water': bacWater10ml,
   'bac-water-10ml': bacWater10ml,
   'bac-water-3ml': bacWater3ml,
-  'thymosin-alpha-1': thymosinAlpha1,
-  'tesamorelin': tesamorelin,
-  'tb-500': tb500,
-  'ss-31': ss31,
-  'semax': semax,
-  'selank': selank,
-  'retatrutide': retatrutide,
-  'nad-plus': nadPlus,
   
-  // Batch 2
-  'melanotan-2': melanotan2,
-  'melanotan-ii': melanotan2,
-  'mots-c': motsC,
-  'kpv': kpv,
-  'klow': klow,
-  'kisspeptin': kisspeptin,
-  'kisspeptin-10': kisspeptin,
-  'ipamorelin': ipamorelin,
-  'glutathione': glutathione,
-  'glow': glow,
-  'ghk-cu': ghkCu,
-  'epithalon': epithalon,
-  
-  // Batch 3
-  'dsip': dsip,
+  // Peptides A-C
+  '5-amino-1mq': amino5_1mq,
+  'aod-9604': aod9604,
+  'bpc-157': bpc157,
+  'cagrilintide': cagrilintide,
   'cjc-1295': cjc1295,
   'cjc-1295-dac': cjc1295,
   'cjc-1295-ipamorelin': cjc1295Ipamorelin,
-  'cjc-no-dac-ipamorelin': cjc1295Ipamorelin,
-  'cagrilintide': cagrilintide,
-  'aod-9604': aod9604,
-  'aod9604': aod9604,
-  '5-amino-1mq': amino5_1mq,
-  '5amino-1mq': amino5_1mq,
-  'bpc-157': bpc157,
+  
+  // Peptides D-G
+  'dsip': dsip,
+  'epithalon': epithalon,
+  'ghk-cu': ghkCu,
+  'glow': glow,
+  'glutathione': glutathione,
+  
+  // Peptides I-M
+  'ipamorelin': ipamorelin,
+  'kisspeptin': kisspeptin,
+  'klow': klow,
+  'kpv': kpv,
+  'melanotan-2': melanotan2,
+  'mots-c': motsC,
+  
+  // Peptides N-S
+  'nad-plus': nadPlus,
+  'retatrutide': retatrutide,
+  'selank': selank,
+  'semax': semax,
+  'slu-pp-332': peptideVialPlaceholder,
+  'ss-31': ss31,
+  
+  // Peptides T-Z
+  'tb-500': tb500,
+  'tesamorelin': tesamorelin,
+  'thymosin-alpha-1': thymosinAlpha1,
+  'tirzepatide': peptideVialPlaceholder,
+  'wolverine': peptideVialPlaceholder,
 };
 
 // Get product image by slug, falling back to placeholder
