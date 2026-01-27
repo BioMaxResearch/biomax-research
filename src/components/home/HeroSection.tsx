@@ -17,7 +17,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
             Advancing Research,
             <br />
-            <span style={{ color: 'hsl(var(--brand-green))' }}>Empowering Discovery</span>
+            <span className="text-accent">Empowering Discovery</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80">
             Precision. Quality. Reliability.
