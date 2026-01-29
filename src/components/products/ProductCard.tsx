@@ -41,11 +41,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
               NEW
             </span>
           )}
-          {product.featured && !product.newArrival && (
-            <span className="absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded">
-              FEATURED
-            </span>
-          )}
         </div>
 
         {/* Product Info */}
