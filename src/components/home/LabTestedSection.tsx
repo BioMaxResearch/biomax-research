@@ -9,7 +9,7 @@ const LabTestedSection = () => {
             <h2 className="section-header">
               THIRD PARTY <span className="section-header-accent">LAB TESTED</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed">Sterility Testing</p>
+            <p className="text-muted-foreground leading-relaxed">HPLC Purity & Potency Analysis</p>
             
             <div className="space-y-3">
               <h3 className="font-bold text-foreground">Purpose Of Third-Party Testing</h3>
