@@ -166,7 +166,7 @@ const ProductDetail = () => {
 
                 {/* Research Applications */}
                 <div>
-                  <h4 className="font-bold text-foreground mb-3">Potential Research Applications:</h4>
+                  <h4 className="font-bold text-foreground mb-3">Research Applications:</h4>
                   <ul className="space-y-2 text-muted-foreground">
                     {product.researchApplications.map((app, index) => <li key={index}>• {app}</li>)}
                   </ul>
