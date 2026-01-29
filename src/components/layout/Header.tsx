@@ -27,7 +27,7 @@ const Header = () => {
     to: '/faq',
     label: 'FAQ'
   }, {
-    to: '/lab-results',
+    to: '/COA',
     label: 'COA Results'
   }];
   return <header className="sticky top-0 z-50">
