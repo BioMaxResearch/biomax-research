@@ -13,7 +13,7 @@ const trustBadges = [
   },
   {
     icon: ShieldCheck,
-    title: 'Satisfaction Guarantee',
+    title: 'Quality Guarantee',
     description: 'We stand behind our products. Full refund if our research compounds don\'t meet your standards.',
   },
   {
