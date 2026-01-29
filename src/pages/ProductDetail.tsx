@@ -38,7 +38,7 @@ const ProductDetail = () => {
       </div>;
   }
   const selectedVariant = product.variants[selectedVariantIndex];
-  const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 5);
+  const relatedProducts = products.filter(p => p.slug === 'kpv' || p.slug === 'tb-500');
   const handleAddToCart = () => {
     addItem(product, selectedVariant, quantity);
   };
