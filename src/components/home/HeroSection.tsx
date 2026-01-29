@@ -12,7 +12,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 md:py-32 py-[12px]">
+      <div className="relative container mx-auto px-4 md:py-32 py-12">
         <div className="max-w-2xl space-y-6 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
             Advancing Research,
