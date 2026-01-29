@@ -30,11 +30,11 @@ const Footer = () => {
               <div className="space-y-2 text-sm text-primary-foreground/80">
                 <div className="flex items-center gap-2">
                   <Mail size={16} className="text-accent" />
-                  <span>support@biomaxpeptides.com</span>
+                  <span>info@biomaxresearch.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={16} className="text-accent" />
-                  <span>1-800-555-PEPT</span>
+                  <span>702-518-5825</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={16} className="text-accent" />

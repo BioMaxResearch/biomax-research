@@ -106,7 +106,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-foreground">Email</h3>
-                        <p className="text-sm text-muted-foreground">support@biomaxpeptides.com</p>
+                        <p className="text-sm text-muted-foreground">info@biomaxresearch.com</p>
                       </div>
                     </div>
 
@@ -116,7 +116,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-foreground">Phone</h3>
-                        <p className="text-sm text-muted-foreground">1-800-555-PEPT</p>
+                        <p className="text-sm text-muted-foreground">702-518-5825</p>
                       </div>
                     </div>
 
