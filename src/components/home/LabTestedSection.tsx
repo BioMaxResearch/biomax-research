@@ -9,9 +9,7 @@ const LabTestedSection = () => {
             <h2 className="section-header">
               THIRD PARTY <span className="section-header-accent">LAB TESTED</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Every Batch is 3rd Party Lab Tested by At Least 2 Independent Labs to Provide Double Verified Purity & Potency. This is the Most Comprehensive & Verifiable Method Used Today for Quality Control. The Consumer Can Verify The Certificate Of Analysis Directly with the Labs   
-            </p>
+            <p className="text-muted-foreground leading-relaxed">Sterility Testing</p>
             
             <div className="space-y-3">
               <h3 className="font-bold text-foreground">Purpose Of Third-Party Testing</h3>
