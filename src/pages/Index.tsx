@@ -19,6 +19,9 @@ const Index = () => {
       
       <main className="flex-1">
         <HeroSection />
+        <TrustpilotReviews />
+        <TrustBadges />
+        <ResearchCTA />
         
         <div className="flex justify-center py-8">
           <Link to="/shop">
@@ -28,9 +31,6 @@ const Index = () => {
           </Link>
         </div>
         
-        <TrustpilotReviews />
-        <TrustBadges />
-        <ResearchCTA />
         <LabTestedSection />
       </main>
 
