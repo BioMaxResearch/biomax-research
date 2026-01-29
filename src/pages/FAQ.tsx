@@ -89,7 +89,9 @@ const FAQ = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto space-y-12">
               {faqCategories.map((category, categoryIndex) => <div key={categoryIndex}>
-                  
+                  <h2 className="text-2xl font-semibold text-foreground mb-4">
+                    {category.title}
+                  </h2>
                   <Accordion type="single" collapsible className="space-y-3">
                     {category.items.map((item, itemIndex) => <AccordionItem key={itemIndex} value={`${categoryIndex}-${itemIndex}`} className="bg-card border border-border rounded-lg px-6">
                         <AccordionTrigger className="text-left font-medium hover:no-underline">
