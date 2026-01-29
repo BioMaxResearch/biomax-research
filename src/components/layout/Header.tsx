@@ -28,7 +28,7 @@ const Header = () => {
     label: 'FAQ'
   }, {
     to: '/lab-results',
-    label: 'Lab Results'
+    label: 'COA Results'
   }];
   return <header className="sticky top-0 z-50">
       {/* Compliance Banner */}
