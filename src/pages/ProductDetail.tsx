@@ -10,19 +10,21 @@ import { Button } from '@/components/ui/button';
 import { Minus, Plus, ShoppingCart, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react';
 import ProductGrid from '@/components/products/ProductGrid';
 import SEO from '@/components/SEO';
-
 const ProductDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const {
+    slug
+  } = useParams<{
+    slug: string;
+  }>();
   const navigate = useNavigate();
-  const { addItem } = useCart();
-  
+  const {
+    addItem
+  } = useCart();
   const product = getProductBySlug(slug || '');
   const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
-
   if (!product) {
-    return (
-      <div className="min-h-screen flex flex-col">
+    return <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center">
@@ -33,25 +35,15 @@ const ProductDetail = () => {
           </div>
         </main>
         <Footer />
-      </div>
-    );
+      </div>;
   }
-
   const selectedVariant = product.variants[selectedVariantIndex];
   const relatedProducts = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 5);
-
   const handleAddToCart = () => {
     addItem(product, selectedVariant, quantity);
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
-      <SEO 
-        title={product.name}
-        description={`${product.name} research peptide. ${product.description.slice(0, 120)}... 99%+ purity, lab tested.`}
-        url={`/product/${product.slug}`}
-        type="product"
-      />
+  return <div className="min-h-screen flex flex-col">
+      <SEO title={product.name} description={`${product.name} research peptide. ${product.description.slice(0, 120)}... 99%+ purity, lab tested.`} url={`/product/${product.slug}`} type="product" />
       <Header />
       <CartDrawer />
 
@@ -85,11 +77,7 @@ const ProductDetail = () => {
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Product Image */}
               <div className="bg-muted rounded-xl p-8 flex items-center justify-center">
-                <img
-                  src={getProductImage(product.slug)}
-                  alt={product.name}
-                  className="max-w-full max-h-96 object-contain"
-                />
+                <img src={getProductImage(product.slug)} alt={product.name} className="max-w-full max-h-96 object-contain" />
               </div>
 
               {/* Product Info */}
@@ -101,28 +89,16 @@ const ProductDetail = () => {
                 </p>
 
                 {/* Variant Selection */}
-                {product.variants.length > 1 && (
-                  <div>
+                {product.variants.length > 1 && <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
                       Select Variant
                     </label>
                     <div className="flex flex-wrap gap-2">
-                      {product.variants.map((variant, index) => (
-                        <button
-                          key={variant.id}
-                          onClick={() => setSelectedVariantIndex(index)}
-                          className={`px-4 py-2 border rounded-md transition-colors ${
-                            index === selectedVariantIndex
-                              ? 'border-accent bg-accent/10 text-accent'
-                              : 'border-border hover:border-accent'
-                          }`}
-                        >
+                      {product.variants.map((variant, index) => <button key={variant.id} onClick={() => setSelectedVariantIndex(index)} className={`px-4 py-2 border rounded-md transition-colors ${index === selectedVariantIndex ? 'border-accent bg-accent/10 text-accent' : 'border-border hover:border-accent'}`}>
                           {variant.name} - ${variant.price.toFixed(2)}
-                        </button>
-                      ))}
+                        </button>)}
                     </div>
-                  </div>
-                )}
+                  </div>}
 
                 {/* View Test Reports Button */}
                 <Button variant="secondary" className="w-full sm:w-auto">
@@ -132,36 +108,21 @@ const ProductDetail = () => {
                 {/* Quantity & Add to Cart */}
                 <div className="flex flex-wrap items-center gap-4">
                   <div className="flex items-center border border-border rounded-md">
-                    <button
-                      onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                      className="p-3 hover:bg-muted transition-colors"
-                      aria-label="Decrease quantity"
-                    >
+                    <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="p-3 hover:bg-muted transition-colors" aria-label="Decrease quantity">
                       <Minus size={16} />
                     </button>
                     <span className="px-6 font-medium">{quantity}</span>
-                    <button
-                      onClick={() => setQuantity(quantity + 1)}
-                      className="p-3 hover:bg-muted transition-colors"
-                      aria-label="Increase quantity"
-                    >
+                    <button onClick={() => setQuantity(quantity + 1)} className="p-3 hover:bg-muted transition-colors" aria-label="Increase quantity">
                       <Plus size={16} />
                     </button>
                   </div>
 
-                  <Button
-                    onClick={handleAddToCart}
-                    size="lg"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground flex-1 sm:flex-none"
-                  >
+                  <Button onClick={handleAddToCart} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground flex-1 sm:flex-none">
                     <ShoppingCart size={18} className="mr-2" />
                     Add to Cart
                   </Button>
 
-                  <Button
-                    size="lg"
-                    className="bg-accent hover:bg-accent/90 text-accent-foreground flex-1 sm:flex-none"
-                  >
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground flex-1 sm:flex-none">
                     Buy Now
                   </Button>
                 </div>
@@ -194,24 +155,12 @@ const ProductDetail = () => {
                 <div>
                   <h4 className="font-bold text-foreground mb-3">Product Details:</h4>
                   <ul className="space-y-2 text-muted-foreground">
-                    {product.productDetails.compound && (
-                      <li>• Compound: {product.productDetails.compound}</li>
-                    )}
-                    {product.productDetails.purity && (
-                      <li>• Purity: {product.productDetails.purity}</li>
-                    )}
-                    {product.productDetails.form && (
-                      <li>• Form: {product.productDetails.form}</li>
-                    )}
-                    {product.productDetails.quantity && (
-                      <li>• Quantity: {product.productDetails.quantity}</li>
-                    )}
-                    {product.productDetails.storage && (
-                      <li>• Storage: {product.productDetails.storage}</li>
-                    )}
-                    {product.productDetails.grade && (
-                      <li>• Grade: {product.productDetails.grade}</li>
-                    )}
+                    {product.productDetails.compound && <li>• Compound: {product.productDetails.compound}</li>}
+                    {product.productDetails.purity && <li>• Purity: {product.productDetails.purity}</li>}
+                    {product.productDetails.form && <li>• Form: {product.productDetails.form}</li>}
+                    {product.productDetails.quantity && <li>• Quantity: {product.productDetails.quantity}</li>}
+                    {product.productDetails.storage && <li>• Storage: {product.productDetails.storage}</li>}
+                    {product.productDetails.grade && <li>• Grade: {product.productDetails.grade}</li>}
                   </ul>
                 </div>
 
@@ -219,16 +168,14 @@ const ProductDetail = () => {
                 <div>
                   <h4 className="font-bold text-foreground mb-3">Potential Research Applications:</h4>
                   <ul className="space-y-2 text-muted-foreground">
-                    {product.researchApplications.map((app, index) => (
-                      <li key={index}>• {app}</li>
-                    ))}
+                    {product.researchApplications.map((app, index) => <li key={index}>• {app}</li>)}
                   </ul>
                 </div>
 
                 {/* Compliance Warning */}
-                <div className="flex items-start gap-3 p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
+                <div className="flex items-start gap-3 p-4 border rounded-lg border-black bg-secondary">
                   <AlertTriangle className="text-destructive flex-shrink-0" size={24} />
-                  <p className="text-destructive font-medium">
+                  <p className="font-medium text-black">
                     THIS IS NOT FOR HUMAN CONSUMPTION. SOLD FOR RESEARCH ONLY.
                   </p>
                 </div>
@@ -236,32 +183,24 @@ const ProductDetail = () => {
 
               {/* Product Image */}
               <div className="bg-muted rounded-xl p-8 flex items-center justify-center">
-                <img
-                  src={getProductImage(product.slug)}
-                  alt={product.name}
-                  className="max-w-full max-h-80 object-contain"
-                />
+                <img src={getProductImage(product.slug)} alt={product.name} className="max-w-full max-h-80 object-contain" />
               </div>
             </div>
           </div>
         </section>
 
         {/* Related Products */}
-        {relatedProducts.length > 0 && (
-          <section className="py-12">
+        {relatedProducts.length > 0 && <section className="py-12">
             <div className="container mx-auto px-4">
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 FREQUENTLY BOUGHT TOGETHER
               </h2>
               <ProductGrid products={relatedProducts} columns={5} />
             </div>
-          </section>
-        )}
+          </section>}
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default ProductDetail;
