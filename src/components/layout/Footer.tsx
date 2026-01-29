@@ -121,10 +121,16 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-primary-foreground/10">
-          <div className="container mx-auto px-4 py-4">
+          <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="text-center text-sm text-primary-foreground/60">
               © {new Date().getFullYear()} BioMax Peptides. All rights reserved.
             </p>
+            <Link 
+              to="/admin" 
+              className="text-xs text-primary-foreground/40 hover:text-accent transition-colors"
+            >
+              Admin Panel
+            </Link>
           </div>
         </div>
       </div>
