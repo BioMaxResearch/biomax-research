@@ -40,8 +40,7 @@ const Header = () => {
 
       {/* Promo Banner */}
       <div className="promo-banner">
-        <span>
-          🧪 15% OFF + FREE Peptide per $150 spend — code: <strong>RESEARCH15</strong>
+        <span>🧪 Each batch is double tested for quality control purity & potency!<strong></strong>
         </span>
       </div>
 
