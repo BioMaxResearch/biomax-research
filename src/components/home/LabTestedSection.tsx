@@ -1,6 +1,6 @@
 import { CheckCircle2 } from 'lucide-react';
 const LabTestedSection = () => {
-  const benefits = ['HPLC Purity Analysis', 'Mass Spectrometry Verification', 'Sterility Testing'];
+  const benefits = ['HPLC Purity & Potency Analysis', 'Mass Spectrometry Verification', 'Sterility Testing'];
   return <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
