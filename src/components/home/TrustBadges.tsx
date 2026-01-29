@@ -7,7 +7,7 @@ const trustBadges = [{
 }, {
   icon: FlaskConical,
   title: '3rd Party Lab Tested',
-  description: 'Every batch undergoes rigorous third-party testing for purity, identity, and potency verification.'
+  description: 'Every batch is 3rd party tested by at least 2 independent labs to provide double verified purity & potency'
 }, {
   icon: ShieldCheck,
   title: 'Satisfaction Guarantee',
