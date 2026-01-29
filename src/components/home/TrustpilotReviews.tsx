@@ -1,6 +1,6 @@
 import { Star } from 'lucide-react';
 const TrustpilotReviews = () => {
-  return <section className="py-12 bg-background">
+  return <section className="bg-background py-[10px]">
       
     </section>;
 };
