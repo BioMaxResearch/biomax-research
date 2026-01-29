@@ -1,14 +1,7 @@
 import { CheckCircle2 } from 'lucide-react';
-
 const LabTestedSection = () => {
-  const benefits = [
-    'HPLC Purity Analysis',
-    'Mass Spectrometry Verification',
-    'Sterility Testing',
-  ];
-
-  return (
-    <section className="py-16 bg-muted/30">
+  const benefits = ['HPLC Purity Analysis', 'Mass Spectrometry Verification', 'Sterility Testing'];
+  return <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -17,21 +10,16 @@ const LabTestedSection = () => {
               THIRD PARTY <span className="section-header-accent">LAB TESTED</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Third-Party Lab Testing Provides A Verified Source Of Information 
-              That Benefits The Consumer Because It Is The Most Comprehensive 
-              Method Used For Independent Analysis. The Consumer Can Read The 
-              Certificate Of Analysis To Find Detailed Product Information.
+              Every Batch is 3rd Party Lab Tested by At Least 2 Independent Labs to Provide Double Verified Purity & Potency. This is the Most Comprehensive & Verifiable Method Used Today for Quality Control. The Consumer Can Verify The Certificate Of Analysis Directly with the Labs   
             </p>
             
             <div className="space-y-3">
               <h3 className="font-bold text-foreground">Purpose Of Third-Party Testing</h3>
               <ul className="space-y-2">
-                {benefits.map((benefit, index) => (
-                  <li key={index} className="flex items-center gap-3">
+                {benefits.map((benefit, index) => <li key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="text-accent flex-shrink-0" size={20} />
                     <span className="text-foreground">{benefit}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
           </div>
@@ -50,8 +38,6 @@ const LabTestedSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default LabTestedSection;
