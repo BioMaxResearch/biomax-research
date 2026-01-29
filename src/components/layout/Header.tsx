@@ -68,11 +68,6 @@ const Header = () => {
 
             {/* Right Side Actions */}
             <div className="flex items-center justify-end space-x-4">
-              <Link to="/admin" className="hidden lg:inline-flex">
-                <Button variant="outline" size="sm" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                  Admin Panel
-                </Button>
-              </Link>
 
               <button className="p-2 text-foreground hover:text-accent transition-colors" aria-label="Search">
                 <Search size={20} />
@@ -98,9 +93,6 @@ const Header = () => {
               {navLinks.map(link => <Link key={link.to} to={link.to} className="block py-2 text-foreground hover:text-accent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                   {link.label}
                 </Link>)}
-              <Link to="/admin" className="block py-2 text-accent font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                Admin Panel
-              </Link>
             </div>
           </div>}
       </nav>
