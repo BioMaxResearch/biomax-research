@@ -61,18 +61,6 @@ const faqCategories = [{
     question: 'What if my order arrives damaged?',
     answer: 'If your order arrives damaged, please take photos of the packaging and products, then contact us within 48 hours of delivery. We will arrange a replacement or refund at no additional cost.'
   }]
-}, {
-  title: 'Storage & Handling',
-  items: [{
-    question: 'How should I store my peptides?',
-    answer: 'Lyophilized (freeze-dried) peptides should be stored at -20°C for long-term storage. Once reconstituted, peptides should be stored at 2-8°C and used within the timeframe specified in the product documentation.'
-  }, {
-    question: 'What is the shelf life of your peptides?',
-    answer: 'Lyophilized peptides have a shelf life of 2 years when stored properly at -20°C. Reconstituted peptides typically remain stable for 2-4 weeks when refrigerated, depending on the specific peptide.'
-  }, {
-    question: 'What bacteriostatic water should I use?',
-    answer: 'We recommend using pharmaceutical-grade bacteriostatic water (0.9% benzyl alcohol) for reconstituting peptides. We offer high-quality bacteriostatic water in our shop in 3ml and 10ml vials.'
-  }]
 }];
 const FAQ = () => {
   return <div className="min-h-screen flex flex-col">
