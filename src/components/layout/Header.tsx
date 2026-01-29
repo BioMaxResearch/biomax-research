@@ -19,7 +19,7 @@ const Header = () => {
     label: 'Shop'
   }, {
     to: '/about',
-    label: 'About Us'
+    label: 'About'
   }, {
     to: '/contact',
     label: 'Contact Us'
