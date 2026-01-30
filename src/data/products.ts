@@ -752,8 +752,8 @@ export const products: Product[] = [
     shortDescription: 'ACTH-derived nootropic peptide',
     category: 'Brain Research',
     variants: [
-      { id: 'sem-5', name: '5mg', sku: 'SEM5', price: 35.00, inStock: true },
-      { id: 'sem-10', name: '10mg (2 x 5mg)', sku: 'SEM5X2', price: 55.00, inStock: true },
+      { id: 'sem-5', name: '5mg', sku: 'SEM5', price: 20.00, inStock: true },
+      { id: 'sem-10', name: '10mg (2 x 5mg)', sku: 'SEM5X2', price: 35.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
