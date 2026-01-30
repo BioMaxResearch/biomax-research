@@ -30,9 +30,6 @@ const faqCategories = [{
   }, {
     question: 'Can I modify or cancel my order?',
     answer: 'Orders can be modified or cancelled within 1 hour of placement. After this window, orders enter processing and cannot be changed. Please contact our support team immediately if you need to make changes.'
-  }, {
-    question: 'Do you offer wholesale pricing?',
-    answer: 'Yes, we offer wholesale pricing for qualified research institutions and bulk purchasers. Please contact us through our Contact page with your requirements, and our team will provide custom pricing.'
   }]
 }, {
   title: 'Shipping & Delivery',
