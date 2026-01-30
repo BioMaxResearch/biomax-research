@@ -22,6 +22,7 @@ import {
 const testReportPaths: Record<string, string> = {
   'bpc-157': '/test-reports/bpc-157.pdf',
   'cagrilintide': '/test-reports/cagrilintide.pdf',
+  'mots-c': '/test-reports/mots-c.pdf',
 };
 const ProductDetail = () => {
   const {
