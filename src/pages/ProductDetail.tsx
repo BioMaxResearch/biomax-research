@@ -24,6 +24,7 @@ const testReportPaths: Record<string, string> = {
   'cagrilintide': '/test-reports/cagrilintide.pdf',
   'mots-c': '/test-reports/mots-c.pdf',
   'semax': '/test-reports/semax.pdf',
+  'tb-500': '/test-reports/tb-500.pdf',
 };
 const ProductDetail = () => {
   const {
