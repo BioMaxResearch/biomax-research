@@ -659,8 +659,8 @@ export const products: Product[] = [
     shortDescription: 'Coenzyme for cellular metabolism research',
     category: 'Anti-aging Research',
     variants: [
-      { id: 'nad-500', name: '500mg', sku: 'NAD500', price: 95.00, inStock: true },
-      { id: 'nad-1000', name: '1000mg (2 x 500mg)', sku: 'NAD500X2', price: 160.00, inStock: true },
+      { id: 'nad-500', name: '500mg', sku: 'NAD500', price: 45.00, inStock: true },
+      { id: 'nad-1000', name: '1000mg (2 x 500mg)', sku: 'NAD500X2', price: 80.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
