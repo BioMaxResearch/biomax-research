@@ -569,7 +569,7 @@ export const products: Product[] = [
     shortDescription: 'Anti-inflammatory tripeptide for research',
     category: 'Inflammation Research',
     variants: [
-      { id: 'kpv-10', name: '10mg', sku: 'KPV10', price: 50.00, inStock: true },
+      { id: 'kpv-10', name: '10mg', sku: 'KPV10', price: 28.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
