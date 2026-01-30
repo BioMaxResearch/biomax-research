@@ -328,8 +328,8 @@ export const products: Product[] = [
     shortDescription: 'Neuropeptide for sleep research',
     category: 'Brain Research',
     variants: [
-      { id: 'dsip-5', name: '5mg', sku: 'DSIP5', price: 35.00, inStock: true },
-      { id: 'dsip-10', name: '10mg (2 x 5mg)', sku: 'DSIP5X2', price: 55.00, inStock: true },
+      { id: 'dsip-5', name: '5mg', sku: 'DSIP5', price: 20.00, inStock: true },
+      { id: 'dsip-10', name: '10mg (2 x 5mg)', sku: 'DSIP5X2', price: 30.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
