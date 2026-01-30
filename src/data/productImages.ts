@@ -12,6 +12,7 @@ import semax from '@/assets/products/semax.png';
 import selank from '@/assets/products/selank.png';
 import retatrutide from '@/assets/products/retatrutide.png';
 import nadPlus from '@/assets/products/nad-plus.png';
+import sluPp332 from '@/assets/products/slu-pp-332.png';
 
 // Batch 2
 import melanotan2 from '@/assets/products/melanotan-2.png';
@@ -72,7 +73,7 @@ export const productImages: Record<string, string> = {
   'retatrutide': retatrutide,
   'selank': selank,
   'semax': semax,
-  'slu-pp-332': peptideVialPlaceholder,
+  'slu-pp-332': sluPp332,
   'ss-31': ss31,
   
   // Peptides T-Z
