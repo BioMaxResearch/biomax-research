@@ -54,7 +54,7 @@ const ProductDetail = () => {
       </div>;
   }
   const selectedVariant = product.variants[selectedVariantIndex];
-  const defaultRelatedSlugs = ['kpv', 'tb-500'];
+  const defaultRelatedSlugs = ['retatrutide', 'cagrilintide', 'glow', 'melanotan-2'];
   const relatedSlugs = product.relatedProductSlugs || defaultRelatedSlugs;
   const relatedProducts = products.filter(p => relatedSlugs.includes(p.slug));
   const handleAddToCart = () => {
