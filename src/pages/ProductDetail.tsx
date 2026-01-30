@@ -120,7 +120,7 @@ const ProductDetail = () => {
                 {testReportPaths[product.slug] ? (
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="secondary" className="w-full sm:w-auto">
+                      <Button className="w-full sm:w-auto bg-black text-white hover:bg-black/90">
                         View Test Reports
                       </Button>
                     </DialogTrigger>
@@ -148,7 +148,7 @@ const ProductDetail = () => {
                     </DialogContent>
                   </Dialog>
                 ) : (
-                  <Button variant="secondary" className="w-full sm:w-auto" disabled>
+                  <Button className="w-full sm:w-auto bg-black text-white hover:bg-black/90" disabled>
                     Test Reports Coming Soon
                   </Button>
                 )}
