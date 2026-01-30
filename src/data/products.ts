@@ -540,7 +540,7 @@ export const products: Product[] = [
     shortDescription: 'Metabolic research blend',
     category: 'Blends',
     variants: [
-      { id: 'klow-80', name: '80mg', sku: 'KLOW80', price: 150.00, inStock: true },
+      { id: 'klow-80', name: '80mg', sku: 'KLOW80', price: 80.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
