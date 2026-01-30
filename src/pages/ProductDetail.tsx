@@ -54,7 +54,9 @@ const ProductDetail = () => {
       </div>;
   }
   const selectedVariant = product.variants[selectedVariantIndex];
-  const relatedProducts = products.filter(p => p.slug === 'kpv' || p.slug === 'tb-500');
+  const defaultRelatedSlugs = ['kpv', 'tb-500'];
+  const relatedSlugs = product.relatedProductSlugs || defaultRelatedSlugs;
+  const relatedProducts = products.filter(p => relatedSlugs.includes(p.slug));
   const handleAddToCart = () => {
     addItem(product, selectedVariant, quantity);
   };

@@ -22,6 +22,7 @@ export interface Product {
   featured: boolean;
   newArrival: boolean;
   researchApplications: string[];
+  relatedProductSlugs?: string[];
   productDetails: {
     compound?: string;
     purity?: string;
@@ -819,6 +820,7 @@ export const products: Product[] = [
     images: ['/placeholder.svg'],
     featured: false,
     newArrival: false,
+    relatedProductSlugs: ['nad-plus', 'mots-c'],
     researchApplications: [
       'Mitochondrial function studies',
       'Oxidative stress research',
