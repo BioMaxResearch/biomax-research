@@ -130,19 +130,14 @@ const ProductDetail = () => {
                       <DialogHeader>
                         <DialogTitle className="text-sm sm:text-base">{product.name} - Test Report</DialogTitle>
                       </DialogHeader>
-                      <div className="flex-1 flex flex-col gap-3 min-h-0">
-                        {/* On mobile, show a prominent button to open in new tab for better UX */}
-                        <div className="sm:hidden flex flex-col items-center justify-center flex-1 gap-4 text-center p-4">
-                          <p className="text-muted-foreground text-sm">
-                            For the best viewing experience on mobile, open the PDF in a new tab.
-                          </p>
-                          <Button asChild size="lg" className="w-full">
-                            <a href={testReportPaths[product.slug]} target="_blank" rel="noopener noreferrer">
-                              Open Test Report
-                            </a>
-                          </Button>
-                        </div>
-                        {/* On desktop, show the embedded PDF */}
+                      <div className="flex-1 flex flex-col min-h-0">
+                        {/* On mobile, use Google Docs viewer for better scrolling/pagination */}
+                        <iframe
+                          src={`https://docs.google.com/viewer?url=${encodeURIComponent(window.location.origin + testReportPaths[product.slug])}&embedded=true`}
+                          className="sm:hidden w-full flex-1 min-h-0 border-0"
+                          title={`${product.name} Test Report`}
+                        />
+                        {/* On desktop, show the native embedded PDF */}
                         <object
                           data={testReportPaths[product.slug]}
                           type="application/pdf"
