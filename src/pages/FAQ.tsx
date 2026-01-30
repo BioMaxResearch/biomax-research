@@ -10,8 +10,8 @@ const faqCategories = [{
     question: 'What are research peptides?',
     answer: 'Research peptides are short chains of amino acids used in scientific research to study various biological processes. They are synthesized in laboratories and used by researchers to investigate cellular functions, develop new treatments, and advance scientific understanding. All our peptides are sold strictly for research purposes only.'
   }, {
-    question: 'Are your peptides for human use?',
-    answer: 'No. All products sold by BioMax Research Peptides are intended exclusively for in-vitro research and laboratory use only. They are NOT FOR HUMAN CONSUMPTION and should not be used as food, drugs, cosmetics, or household chemicals.'
+    question: 'Why do you sell the higher quantities as multiple vials of the smaller quantities?',
+    answer: 'To be able to offer you the lowest price possible while ensuring you know the exact purity & potency of the vials you will be getting. It also allows you to have a freshly reconstituted vial and not have to worry about degradation or waste.'
   }, {
     question: 'What is the purity of your peptides?',
     answer: 'All of our peptides are synthesized to a minimum purity of 99%. Each batch undergoes rigorous third-party testing, and a Certificate of Analysis (COA) is available for every product. You can view these results on our Lab Results page.'
