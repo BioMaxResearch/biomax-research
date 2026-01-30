@@ -875,13 +875,14 @@ export const products: Product[] = [
     shortDescription: 'GHRH analog for metabolic research',
     category: 'Obesity Research',
     variants: [
-      { id: 'tesa-5', name: '5mg', sku: 'TESA5', price: 60.00, inStock: true },
-      { id: 'tesa-10', name: '10mg (2 x 5mg)', sku: 'TESA5X2', price: 95.00, inStock: true },
+      { id: 'tesa-5', name: '5mg', sku: 'TESA5', price: 30.00, inStock: true },
+      { id: 'tesa-10', name: '10mg (2 x 5mg)', sku: 'TESA5X2', price: 50.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
     featured: false,
     newArrival: false,
+    relatedProductSlugs: ['retatrutide', 'ipamorelin', 'glow'],
     researchApplications: [
       'Growth hormone secretion studies',
       'Visceral fat reduction research',
