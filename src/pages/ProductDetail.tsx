@@ -21,6 +21,7 @@ import {
 // Map of product slugs to their test report PDF paths
 const testReportPaths: Record<string, string> = {
   'bpc-157': '/test-reports/bpc-157.pdf',
+  'cagrilintide': '/test-reports/cagrilintide.pdf',
 };
 const ProductDetail = () => {
   const {
