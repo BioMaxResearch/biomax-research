@@ -971,8 +971,9 @@ export const products: Product[] = [
     shortDescription: 'Recovery and tissue repair research blend',
     category: 'Blends',
     variants: [
-      { id: 'wolf-10', name: '10mg', sku: 'WOLF10', price: 75.00, inStock: true },
+      { id: 'wolf-10', name: '10mg', sku: 'WOLF10', price: 45.00, inStock: true },
     ],
+    relatedProductSlugs: ['ghk-cu', 'kpv', 'retatrutide'],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
     featured: true,
