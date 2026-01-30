@@ -20,7 +20,7 @@ const TrustBadges = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
           {trustBadges.map((badge, index) => (
-            <div key={index} className="trust-badge">
+            <div key={index} className="trust-badge text-center flex flex-col items-center">
               <badge.icon className="w-12 h-12 text-accent mb-4" />
               <h3 className="font-bold text-foreground mb-2">{badge.title}</h3>
               <p className="text-sm text-muted-foreground text-center">{badge.description}</p>
