@@ -2,22 +2,31 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { categories } from '@/data/products';
 import logo from '@/assets/logo.jpeg';
-
 const Footer = () => {
   const popularCategories = categories.slice(0, 6);
-  
-  const usefulLinks = [
-    { to: '/about', label: 'About Us' },
-    { to: '/contact', label: 'Contact Us' },
-    { to: '/faq', label: 'FAQ' },
-    { to: '/lab-results', label: 'Lab Results' },
-    { to: '/privacy', label: 'Privacy Policy' },
-    { to: '/terms', label: 'Terms of Service' },
-    { to: '/refund', label: 'Refund Policy' },
-  ];
-
-  return (
-    <footer>
+  const usefulLinks = [{
+    to: '/about',
+    label: 'About Us'
+  }, {
+    to: '/contact',
+    label: 'Contact Us'
+  }, {
+    to: '/faq',
+    label: 'FAQ'
+  }, {
+    to: '/lab-results',
+    label: 'Lab Results'
+  }, {
+    to: '/privacy',
+    label: 'Privacy Policy'
+  }, {
+    to: '/terms',
+    label: 'Terms of Service'
+  }, {
+    to: '/refund',
+    label: 'Refund Policy'
+  }];
+  return <footer>
       {/* Main Footer */}
       <div className="footer-gradient text-primary-foreground">
         <div className="container mx-auto px-4 py-12">
@@ -47,16 +56,11 @@ const Footer = () => {
             <div>
               <h4 className="font-bold text-lg mb-4">Research Categories</h4>
               <ul className="space-y-2 text-sm text-primary-foreground/80">
-                {popularCategories.map((category) => (
-                  <li key={category.id}>
-                    <Link 
-                      to={`/shop?category=${category.slug}`} 
-                      className="hover:text-accent transition-colors"
-                    >
+                {popularCategories.map(category => <li key={category.id}>
+                    <Link to={`/shop?category=${category.slug}`} className="hover:text-accent transition-colors">
                       {category.name}
                     </Link>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
 
@@ -64,39 +68,16 @@ const Footer = () => {
             <div>
               <h4 className="font-bold text-lg mb-4">Useful Links</h4>
               <ul className="space-y-2 text-sm text-primary-foreground/80">
-                {usefulLinks.map((link) => (
-                  <li key={link.to}>
-                    <Link 
-                      to={link.to} 
-                      className="hover:text-accent transition-colors"
-                    >
+                {usefulLinks.map(link => <li key={link.to}>
+                    <Link to={link.to} className="hover:text-accent transition-colors">
                       {link.label}
                     </Link>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
 
             {/* Newsletter */}
-            <div>
-              <h4 className="font-bold text-lg mb-4">Subscribe for Research Updates</h4>
-              <p className="text-sm text-primary-foreground/80 mb-4">
-                Get the latest research compounds and exclusive offers.
-              </p>
-              <form className="space-y-3">
-                <input
-                  type="email"
-                  placeholder="Email address"
-                  className="w-full px-4 py-2 rounded-md bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-                <button
-                  type="submit"
-                  className="w-full px-4 py-2 rounded-md bg-accent text-accent-foreground font-medium hover:bg-accent/90 transition-colors"
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
+            
           </div>
         </div>
 
@@ -125,17 +106,12 @@ const Footer = () => {
             <p className="text-center text-sm text-primary-foreground/60">
               © {new Date().getFullYear()} BioMax Peptides. All rights reserved.
             </p>
-            <Link 
-              to="/admin" 
-              className="text-xs text-primary-foreground/40 hover:text-accent transition-colors"
-            >
+            <Link to="/admin" className="text-xs text-primary-foreground/40 hover:text-accent transition-colors">
               Admin Panel
             </Link>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
