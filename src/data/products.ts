@@ -923,7 +923,7 @@ export const products: Product[] = [
   },
   {
     id: 'tirzepatide',
-    name: 'Tirzepatide (TRZ-2)',
+    name: 'TRZ-2',
     slug: 'tirzepatide',
     description: 'Tirzepatide (TRZ-2) is a dual GIP and GLP-1 receptor agonist studied for its effects on glucose metabolism and body weight regulation in research models. It represents a novel approach to metabolic pathway research and has shown significant effects in clinical studies.',
     shortDescription: 'Dual GIP/GLP-1 agonist for metabolic studies',
@@ -947,7 +947,7 @@ export const products: Product[] = [
       'Incretin hormone studies',
     ],
     productDetails: {
-      compound: 'Tirzepatide (TRZ-2)',
+      compound: 'TRZ-2',
       purity: '>98%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
