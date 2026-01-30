@@ -844,13 +844,14 @@ export const products: Product[] = [
     shortDescription: 'Thymosin Beta-4 for tissue repair research',
     category: 'Recovery Research',
     variants: [
-      { id: 'tb-5', name: '5mg', sku: 'TB5', price: 45.00, inStock: true },
-      { id: 'tb-10', name: '10mg (2 x 5mg)', sku: 'TB5X2', price: 70.00, inStock: true },
+      { id: 'tb-5', name: '5mg', sku: 'TB5', price: 25.00, inStock: true },
+      { id: 'tb-10', name: '10mg (2 x 5mg)', sku: 'TB5X2', price: 40.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
     featured: true,
     newArrival: false,
+    relatedProductSlugs: ['bpc-157', 'ghk-cu', 'kpv'],
     researchApplications: [
       'Cell migration studies',
       'Angiogenesis research',
