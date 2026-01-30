@@ -46,20 +46,8 @@ const faqCategories = [{
     question: 'How much is shipping?',
     answer: 'We charge a flat rate of $9.99 for 3-5 days or $14.99 for 2-day air.'
   }, {
-    question: 'How are peptides shipped?',
-    answer: 'All peptides are shipped in temperature-controlled packaging to maintain stability. Lyophilized peptides are shipped with ice packs in insulated containers during warmer months to ensure product integrity.'
-  }, {
     question: 'What if my order arrives damaged?',
     answer: 'If your order arrives damaged, please take photos of the packaging and products, then contact us within 48 hours of delivery. We will arrange a replacement or refund at no additional cost.'
-  }]
-}, {
-  title: 'Returns & Refunds',
-  items: [{
-    question: 'What is your return policy?',
-    answer: 'We offer a 30-day satisfaction guarantee on all unopened products. If you receive a damaged or incorrect item, we will replace it or provide a full refund. Opened products cannot be returned due to the nature of research materials.'
-  }, {
-    question: 'How do I request a refund?',
-    answer: 'To request a refund, contact our support team at support@biomaxpeptides.com with your order number and reason for the return. We process refunds within 5-7 business days after receiving the returned product.'
   }]
 }];
 const FAQ = () => {
