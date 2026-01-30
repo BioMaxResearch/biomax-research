@@ -80,7 +80,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: '5-Amino-1MQ (5-Amino-1-Methylquinolinium)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -110,7 +110,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'AOD-9604 (hGH fragment 177-191)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -194,7 +194,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'BPC-157 (Body Protection Compound-157)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -224,7 +224,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Cagrilintide (Long-acting amylin analog)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -253,7 +253,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'CJC-1295 (no DAC) + Ipamorelin',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial (5mg each)',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -283,7 +283,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'CJC-1295 (no DAC) / Mod GRF 1-29',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -313,7 +313,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'CJC-1295 with DAC',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -343,7 +343,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'DSIP (Delta Sleep-Inducing Peptide)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -376,7 +376,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Epithalon (Epitalon)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -408,7 +408,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'GHK-Cu (Copper Peptide)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '100mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -437,7 +437,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'GLOW Blend (Multi-peptide combination)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '70mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -466,7 +466,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Glutathione (L-Glutathione)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '1500mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -496,7 +496,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Ipamorelin',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -525,7 +525,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Kisspeptin-10',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -554,7 +554,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'KLOW Blend (Multi-peptide combination)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '80mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -583,7 +583,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'KPV (α-MSH derivative)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -612,7 +612,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Melanotan II (MT-2)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -644,7 +644,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'MOTS-C (Mitochondrial ORF of the 12S rRNA Type-C)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -674,7 +674,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'NAD+ (Nicotinamide Adenine Dinucleotide)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '500mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -707,7 +707,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'RT-3',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -737,7 +737,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Selank',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -767,7 +767,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Semax',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -796,7 +796,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'SLU-PP-332',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -827,7 +827,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'SS-31 (Elamipretide)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -857,7 +857,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'TB-500 (Thymosin Beta-4)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -887,7 +887,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Tesamorelin',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -917,7 +917,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Thymosin Alpha-1',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '5mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -951,7 +951,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'TRZ-2',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
@@ -980,7 +980,7 @@ export const products: Product[] = [
     ],
     productDetails: {
       compound: 'Wolverine Blend (BPC-157 + TB-500)',
-      purity: '>98%',
+      purity: '>98.7%',
       form: 'Lyophilized powder',
       quantity: '10mg per vial (5mg each)',
       storage: 'Store at -4°F (-20°C). After reconstitution, refrigerate at 36-46°F (2-8°C) and use within 30 days.',
