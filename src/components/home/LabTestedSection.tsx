@@ -3,7 +3,7 @@ const LabTestedSection = () => {
   const benefits = ['HPLC Purity & Potency Analysis', 'Mass Spectrometry Verification', 'Sterility Testing'];
   return <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           {/* Content */}
           <div className="space-y-6">
             <h2 className="section-header">
@@ -14,7 +14,7 @@ const LabTestedSection = () => {
             
             <div className="space-y-3">
               <h3 className="font-bold text-foreground">Purpose Of Third-Party Testing</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 inline-flex flex-col items-start">
                 {benefits.map((benefit, index) => <li key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="text-accent flex-shrink-0" size={20} />
                     <span className="text-foreground">{benefit}</span>
@@ -24,8 +24,8 @@ const LabTestedSection = () => {
           </div>
 
           {/* Image placeholder - lab testing visual */}
-          <div className="relative">
-            <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl flex items-center justify-center">
+          <div className="relative mt-8">
+            <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl flex items-center justify-center px-16 py-8">
               <div className="text-center space-y-2">
                 <div className="w-24 h-24 mx-auto bg-accent/20 rounded-full flex items-center justify-center">
                   <CheckCircle2 className="text-accent" size={48} />
