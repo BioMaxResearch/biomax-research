@@ -125,7 +125,7 @@ const ProductDetail = () => {
                         <DialogTitle>{product.name} - Test Report</DialogTitle>
                       </DialogHeader>
                       <iframe
-                        src={testReportPaths[product.slug]}
+                        src={`${testReportPaths[product.slug]}#toolbar=0&navpanes=0&scrollbar=1`}
                         className="w-full h-full border-0"
                         title={`${product.name} Test Report`}
                       />
