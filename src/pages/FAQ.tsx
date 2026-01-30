@@ -10,8 +10,8 @@ const faqCategories = [{
     question: 'What are research peptides?',
     answer: 'Research peptides are short chains of amino acids used in scientific research to study various biological processes. They are synthesized in laboratories and used by researchers to investigate cellular functions, develop new treatments, and advance scientific understanding. All our peptides are sold strictly for research purposes only.'
   }, {
-    question: 'Why do you sell the higher quantities as multiple vials of the smaller quantities?',
-    answer: 'To be able to offer you the lowest price possible while ensuring you know the exact purity & potency of the vials you will be getting. It also allows you to have a freshly reconstituted vial and not have to worry about degradation or waste.'
+    question: 'Are your peptides for human use?',
+    answer: 'No. All products sold by BioMax Research Peptides are intended exclusively for in-vitro research and laboratory use only. They are NOT FOR HUMAN CONSUMPTION and should not be used as food, drugs, cosmetics, or household chemicals.'
   }, {
     question: 'What is the purity of your peptides?',
     answer: 'All of our peptides are synthesized to a minimum purity of 99%. Each batch undergoes rigorous third-party testing, and a Certificate of Analysis (COA) is available for every product. You can view these results on our Lab Results page.'
@@ -96,9 +96,7 @@ const FAQ = () => {
                 <h3 className="text-xl font-semibold text-foreground mb-2">
                   Still have questions?
                 </h3>
-                <p className="text-muted-foreground mb-6">
-                  Our support team is ready to help with any questions about our research peptides.
-                </p>
+                <p className="text-muted-foreground mb-6">Our support team is ready to help with any questions</p>
                 <Link to="/contact" className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors">
                   Contact Support
                 </Link>
