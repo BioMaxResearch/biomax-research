@@ -120,13 +120,13 @@ const ProductDetail = () => {
                         View Test Reports
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-4xl h-[90vh] p-0 overflow-hidden">
-                      <DialogHeader className="p-4 pb-0">
+                    <DialogContent className="max-w-4xl h-[90vh] p-0 flex flex-col gap-0 [&>button]:top-2 [&>button]:right-2 [&>button]:z-10 [&>button]:bg-background/80 [&>button]:rounded-full [&>button]:p-1">
+                      <DialogHeader className="sr-only">
                         <DialogTitle>{product.name} - Test Report</DialogTitle>
                       </DialogHeader>
                       <iframe
                         src={`${testReportPaths[product.slug]}#toolbar=0&navpanes=0&scrollbar=1`}
-                        className="w-full h-full border-0"
+                        className="w-full flex-1 border-0"
                         title={`${product.name} Test Report`}
                       />
                     </DialogContent>
