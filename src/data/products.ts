@@ -209,8 +209,8 @@ export const products: Product[] = [
     shortDescription: 'Long-acting amylin analog for metabolic research',
     category: 'Obesity Research',
     variants: [
-      { id: 'cag-5', name: '5mg', sku: 'CAG5', price: 180.00, inStock: true },
-      { id: 'cag-10', name: '10mg (2 x 5mg)', sku: 'CAG5X2', price: 300.00, inStock: true },
+      { id: 'cag-5', name: '5mg', sku: 'CAG5', price: 30.00, inStock: true },
+      { id: 'cag-10', name: '10mg (2 x 5mg)', sku: 'CAG5X2', price: 45.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
