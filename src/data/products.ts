@@ -811,9 +811,9 @@ export const products: Product[] = [
     shortDescription: 'Mitochondria-targeted peptide for research',
     category: 'Anti-aging Research',
     variants: [
-      { id: 'ss31-10', name: '10mg', sku: 'SS3110', price: 100.00, inStock: true },
-      { id: 'ss31-20', name: '20mg (2 x 10mg)', sku: 'SS3110X2', price: 170.00, inStock: true },
-      { id: 'ss31-30', name: '30mg (3 x 10mg)', sku: 'SS3110X3', price: 230.00, inStock: true },
+      { id: 'ss31-10', name: '10mg', sku: 'SS3110', price: 40.00, inStock: true },
+      { id: 'ss31-20', name: '20mg (2 x 10mg)', sku: 'SS3110X2', price: 60.00, inStock: true },
+      { id: 'ss31-30', name: '30mg (3 x 10mg)', sku: 'SS3110X3', price: 80.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
