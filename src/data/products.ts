@@ -391,7 +391,10 @@ export const products: Product[] = [
     shortDescription: 'Copper tripeptide for skin and tissue research',
     category: 'Skin Hair Nail Research',
     variants: [
-      { id: 'ghkcu-100', name: '100mg', sku: 'GHKCU100', price: 40.00, inStock: true },
+      { id: 'ghkcu-50', name: '50mg', sku: 'GHKCU50', price: 25.00, inStock: true },
+      { id: 'ghkcu-100', name: '100mg', sku: 'GHKCU100', price: 45.00, inStock: true },
+      { id: 'ghkcu-200', name: '200mg (2 x 100mg)', sku: 'GHKCU100X2', price: 75.00, inStock: true },
+      { id: 'ghkcu-300', name: '300mg (3 x 100mg)', sku: 'GHKCU100X3', price: 100.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
