@@ -43,8 +43,8 @@ const faqCategories = [{
     question: 'How long does shipping take?',
     answer: 'Standard shipping typically takes 3-5 business days within the continental US. Expedited options are available at checkout. All orders include tracking information.'
   }, {
-    question: 'Is shipping free?',
-    answer: 'Yes, we offer free standard shipping on all orders over $100. Orders under $100 have a flat-rate shipping fee of $9.99.'
+    question: 'How much is shipping?',
+    answer: 'We charge a flat rate of $9.99 for 3-5 days or $14.99 for 2-day air.'
   }, {
     question: 'How are peptides shipped?',
     answer: 'All peptides are shipped in temperature-controlled packaging to maintain stability. Lyophilized peptides are shipped with ice packs in insulated containers during warmer months to ensure product integrity.'
