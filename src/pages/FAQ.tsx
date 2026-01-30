@@ -48,6 +48,9 @@ const faqCategories = [{
   }, {
     question: 'How are peptides shipped?',
     answer: 'All peptides are shipped in temperature-controlled packaging to maintain stability. Lyophilized peptides are shipped with ice packs in insulated containers during warmer months to ensure product integrity.'
+  }, {
+    question: 'What if my order arrives damaged?',
+    answer: 'If your order arrives damaged, please take photos of the packaging and products, then contact us within 48 hours of delivery. We will arrange a replacement or refund at no additional cost.'
   }]
 }, {
   title: 'Returns & Refunds',
@@ -57,9 +60,6 @@ const faqCategories = [{
   }, {
     question: 'How do I request a refund?',
     answer: 'To request a refund, contact our support team at support@biomaxpeptides.com with your order number and reason for the return. We process refunds within 5-7 business days after receiving the returned product.'
-  }, {
-    question: 'What if my order arrives damaged?',
-    answer: 'If your order arrives damaged, please take photos of the packaging and products, then contact us within 48 hours of delivery. We will arrange a replacement or refund at no additional cost.'
   }]
 }];
 const FAQ = () => {
