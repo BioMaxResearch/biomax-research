@@ -10,6 +10,18 @@ import { Button } from '@/components/ui/button';
 import { Minus, Plus, ShoppingCart, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react';
 import ProductGrid from '@/components/products/ProductGrid';
 import SEO from '@/components/SEO';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+
+// Map of product slugs to their test report PDF paths
+const testReportPaths: Record<string, string> = {
+  'bpc-157': '/test-reports/bpc-157.pdf',
+};
 const ProductDetail = () => {
   const {
     slug
@@ -101,9 +113,29 @@ const ProductDetail = () => {
                   </div>}
 
                 {/* View Test Reports Button */}
-                <Button variant="secondary" className="w-full sm:w-auto">
-                  View Test Reports
-                </Button>
+                {testReportPaths[product.slug] ? (
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="secondary" className="w-full sm:w-auto">
+                        View Test Reports
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-4xl h-[80vh]">
+                      <DialogHeader>
+                        <DialogTitle>{product.name} - Test Report</DialogTitle>
+                      </DialogHeader>
+                      <iframe
+                        src={testReportPaths[product.slug]}
+                        className="w-full h-full rounded-md"
+                        title={`${product.name} Test Report`}
+                      />
+                    </DialogContent>
+                  </Dialog>
+                ) : (
+                  <Button variant="secondary" className="w-full sm:w-auto" disabled>
+                    Test Reports Coming Soon
+                  </Button>
+                )}
 
                 {/* Quantity & Add to Cart */}
                 <div className="flex flex-wrap items-center gap-4">
