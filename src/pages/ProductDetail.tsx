@@ -126,15 +126,27 @@ const ProductDetail = () => {
                         View Test Reports
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-4xl h-[90vh] p-4 flex flex-col gap-4 [&>button]:top-2 [&>button]:right-2 [&>button]:z-10 [&>button]:bg-background/80 [&>button]:rounded-full [&>button]:p-1">
+                    <DialogContent className="w-[95vw] max-w-4xl h-[85vh] p-3 sm:p-4 flex flex-col gap-3 [&>button]:top-2 [&>button]:right-2 [&>button]:z-10 [&>button]:bg-background/80 [&>button]:rounded-full [&>button]:p-1">
                       <DialogHeader>
-                        <DialogTitle>{product.name} - Test Report</DialogTitle>
+                        <DialogTitle className="text-sm sm:text-base">{product.name} - Test Report</DialogTitle>
                       </DialogHeader>
-                      <div className="flex-1 flex flex-col gap-4">
+                      <div className="flex-1 flex flex-col gap-3 min-h-0">
+                        {/* On mobile, show a prominent button to open in new tab for better UX */}
+                        <div className="sm:hidden flex flex-col items-center justify-center flex-1 gap-4 text-center p-4">
+                          <p className="text-muted-foreground text-sm">
+                            For the best viewing experience on mobile, open the PDF in a new tab.
+                          </p>
+                          <Button asChild size="lg" className="w-full">
+                            <a href={testReportPaths[product.slug]} target="_blank" rel="noopener noreferrer">
+                              Open Test Report
+                            </a>
+                          </Button>
+                        </div>
+                        {/* On desktop, show the embedded PDF */}
                         <object
                           data={testReportPaths[product.slug]}
                           type="application/pdf"
-                          className="w-full flex-1 min-h-0"
+                          className="hidden sm:block w-full flex-1 min-h-0"
                           title={`${product.name} Test Report`}
                         >
                           <div className="flex flex-col items-center justify-center h-full gap-4 text-center p-8">
