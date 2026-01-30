@@ -124,15 +124,27 @@ const ProductDetail = () => {
                         View Test Reports
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-4xl h-[90vh] p-0 flex flex-col gap-0 [&>button]:top-2 [&>button]:right-2 [&>button]:z-10 [&>button]:bg-background/80 [&>button]:rounded-full [&>button]:p-1">
-                      <DialogHeader className="sr-only">
+                    <DialogContent className="max-w-4xl h-[90vh] p-4 flex flex-col gap-4 [&>button]:top-2 [&>button]:right-2 [&>button]:z-10 [&>button]:bg-background/80 [&>button]:rounded-full [&>button]:p-1">
+                      <DialogHeader>
                         <DialogTitle>{product.name} - Test Report</DialogTitle>
                       </DialogHeader>
-                      <iframe
-                        src={`${testReportPaths[product.slug]}#toolbar=0&navpanes=0&scrollbar=1`}
-                        className="w-full flex-1 border-0"
-                        title={`${product.name} Test Report`}
-                      />
+                      <div className="flex-1 flex flex-col gap-4">
+                        <object
+                          data={testReportPaths[product.slug]}
+                          type="application/pdf"
+                          className="w-full flex-1 min-h-0"
+                          title={`${product.name} Test Report`}
+                        >
+                          <div className="flex flex-col items-center justify-center h-full gap-4 text-center p-8">
+                            <p className="text-muted-foreground">Unable to display PDF in browser.</p>
+                            <Button asChild>
+                              <a href={testReportPaths[product.slug]} target="_blank" rel="noopener noreferrer">
+                                Open PDF in New Tab
+                              </a>
+                            </Button>
+                          </div>
+                        </object>
+                      </div>
                     </DialogContent>
                   </Dialog>
                 ) : (
