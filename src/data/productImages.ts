@@ -34,6 +34,7 @@ import cagrilintide from '@/assets/products/cagrilintide.png';
 import aod9604 from '@/assets/products/aod-9604.png';
 import amino5_1mq from '@/assets/products/5-amino-1mq.png';
 import bpc157 from '@/assets/products/bpc-157.png';
+import tirzepatide from '@/assets/products/tirzepatide.png';
 
 import peptideVialPlaceholder from '@/assets/peptide-vial-placeholder.png';
 
@@ -80,7 +81,7 @@ export const productImages: Record<string, string> = {
   'tb-500': tb500,
   'tesamorelin': tesamorelin,
   'thymosin-alpha-1': thymosinAlpha1,
-  'tirzepatide': peptideVialPlaceholder,
+  'tirzepatide': tirzepatide,
   'wolverine': peptideVialPlaceholder,
 };
 
