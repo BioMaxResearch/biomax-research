@@ -35,6 +35,7 @@ import aod9604 from '@/assets/products/aod-9604.png';
 import amino5_1mq from '@/assets/products/5-amino-1mq.png';
 import bpc157 from '@/assets/products/bpc-157.png';
 import tirzepatide from '@/assets/products/tirzepatide.png';
+import wolverine from '@/assets/products/wolverine.png';
 
 import peptideVialPlaceholder from '@/assets/peptide-vial-placeholder.png';
 
@@ -82,7 +83,7 @@ export const productImages: Record<string, string> = {
   'tesamorelin': tesamorelin,
   'thymosin-alpha-1': thymosinAlpha1,
   'tirzepatide': tirzepatide,
-  'wolverine': peptideVialPlaceholder,
+  'wolverine': wolverine,
 };
 
 // Get product image by slug, falling back to placeholder
