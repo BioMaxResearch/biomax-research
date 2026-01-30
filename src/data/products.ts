@@ -423,7 +423,7 @@ export const products: Product[] = [
     shortDescription: 'Skin and anti-aging research blend',
     category: 'Blends',
     variants: [
-      { id: 'glow-70', name: '70mg', sku: 'GLOW70', price: 100.00, inStock: true },
+      { id: 'glow-70', name: '70mg', sku: 'GLOW70', price: 75.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
