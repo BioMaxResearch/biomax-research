@@ -722,8 +722,8 @@ export const products: Product[] = [
     shortDescription: 'Nootropic peptide for brain research',
     category: 'Brain Research',
     variants: [
-      { id: 'sel-5', name: '5mg', sku: 'SEL5', price: 40.00, inStock: true },
-      { id: 'sel-10', name: '10mg (2 x 5mg)', sku: 'SEL5X2', price: 60.00, inStock: true },
+      { id: 'sel-5', name: '5mg', sku: 'SEL5', price: 20.00, inStock: true },
+      { id: 'sel-10', name: '10mg (2 x 5mg)', sku: 'SEL5X2', price: 35.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
