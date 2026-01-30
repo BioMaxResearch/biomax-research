@@ -782,7 +782,7 @@ export const products: Product[] = [
     shortDescription: 'ERR agonist for exercise research',
     category: 'Muscle Research',
     variants: [
-      { id: 'slu-5', name: '5mg', sku: 'SLU5', price: 75.00, inStock: true },
+      { id: 'slu-5', name: '5mg', sku: 'SLU5', price: 45.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
