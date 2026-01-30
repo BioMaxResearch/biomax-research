@@ -12,19 +12,19 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 md:py-32 py-[75px]">
-        <div className="max-w-2xl space-y-6 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
+      <div className="relative container mx-auto px-4 md:py-16 py-[38px]">
+        <div className="max-w-2xl space-y-3 animate-fade-in">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight">
             Advancing Research,
             <br />
             <span className="text-[#90c837]">Empowering Discovery</span>
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80">
+          <p className="text-base md:text-lg text-primary-foreground/80">
             Precision. Quality. Reliability.
             <br />
             Premium research-grade peptides for scientific advancement.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold">
               <Link to="/shop">
                 Shop Now
