@@ -452,7 +452,7 @@ export const products: Product[] = [
     shortDescription: 'Antioxidant tripeptide for cellular research',
     category: 'Anti-aging Research',
     variants: [
-      { id: 'glut-1500', name: '1500mg', sku: 'GLUT1500', price: 75.00, inStock: true },
+      { id: 'glut-1500', name: '1500mg', sku: 'GLUT1500', price: 45.00, inStock: true },
     ],
     image: '/placeholder.svg',
     images: ['/placeholder.svg'],
