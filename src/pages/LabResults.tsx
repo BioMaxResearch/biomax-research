@@ -20,7 +20,7 @@ const LabResults = () => {
       <SEO 
         title="Lab Results & Certificates"
         description="View third-party lab results and Certificates of Analysis for all BioMax research peptides. 99%+ purity verified by HPLC and mass spectrometry."
-        url="/lab-results"
+        url="/COA"
       />
       <Header />
       <CartDrawer />
