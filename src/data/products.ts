@@ -1014,11 +1014,98 @@ export const getProductBySlug = (slug: string): Product | undefined => {
   return products.find(p => p.slug === slug);
 };
 
+// Levenshtein distance for fuzzy matching
+const levenshteinDistance = (str1: string, str2: string): number => {
+  const m = str1.length;
+  const n = str2.length;
+  const dp: number[][] = Array(m + 1).fill(null).map(() => Array(n + 1).fill(0));
+  
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      if (str1[i - 1] === str2[j - 1]) {
+        dp[i][j] = dp[i - 1][j - 1];
+      } else {
+        dp[i][j] = 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+      }
+    }
+  }
+  return dp[m][n];
+};
+
+// Check if any word in target starts with query (for partial matching)
+const hasPartialMatch = (target: string, query: string): boolean => {
+  const words = target.toLowerCase().split(/[\s\-]+/);
+  const queryLower = query.toLowerCase();
+  return words.some(word => word.startsWith(queryLower));
+};
+
+// Check fuzzy match - allows for typos
+const hasFuzzyMatch = (target: string, query: string, threshold: number = 2): boolean => {
+  const words = target.toLowerCase().split(/[\s\-]+/);
+  const queryLower = query.toLowerCase();
+  
+  // For short queries, be stricter with fuzzy matching
+  const adjustedThreshold = queryLower.length <= 3 ? 1 : threshold;
+  
+  return words.some(word => {
+    // If query is shorter than word, compare with substring
+    if (queryLower.length < word.length) {
+      const substring = word.substring(0, queryLower.length);
+      return levenshteinDistance(substring, queryLower) <= adjustedThreshold;
+    }
+    return levenshteinDistance(word, queryLower) <= adjustedThreshold;
+  });
+};
+
 export const searchProducts = (query: string): Product[] => {
-  const lowerQuery = query.toLowerCase();
-  return products.filter(p => 
-    p.name.toLowerCase().includes(lowerQuery) ||
-    p.description.toLowerCase().includes(lowerQuery) ||
-    p.category.toLowerCase().includes(lowerQuery)
-  );
+  if (!query || query.trim().length === 0) return products;
+  
+  const lowerQuery = query.toLowerCase().trim();
+  
+  // Score-based matching for better relevance
+  const scoredProducts = products.map(product => {
+    let score = 0;
+    const name = product.name.toLowerCase();
+    const category = product.category.toLowerCase();
+    const description = product.description.toLowerCase();
+    const slug = product.slug.toLowerCase();
+    
+    // Exact match in name (highest priority)
+    if (name.includes(lowerQuery)) score += 100;
+    
+    // Partial word match in name (e.g., "bpc" matches "BPC-157")
+    if (hasPartialMatch(product.name, lowerQuery)) score += 80;
+    
+    // Slug match
+    if (slug.includes(lowerQuery)) score += 70;
+    
+    // Exact match in category
+    if (category.includes(lowerQuery)) score += 50;
+    
+    // Fuzzy match in name (handles typos like "boc" for "bpc")
+    if (hasFuzzyMatch(product.name, lowerQuery)) score += 40;
+    
+    // Fuzzy match in slug
+    if (hasFuzzyMatch(product.slug, lowerQuery)) score += 35;
+    
+    // Partial match in category
+    if (hasPartialMatch(product.category, lowerQuery)) score += 30;
+    
+    // Description contains query
+    if (description.includes(lowerQuery)) score += 20;
+    
+    // Fuzzy match in category
+    if (hasFuzzyMatch(product.category, lowerQuery)) score += 15;
+    
+    return { product, score };
+  });
+  
+  // Return products with score > 0, sorted by relevance
+  return scoredProducts
+    .filter(item => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(item => item.product);
 };
