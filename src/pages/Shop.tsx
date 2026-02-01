@@ -9,13 +9,13 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search, SlidersHorizontal, X } from 'lucide-react';
 import SEO from '@/components/SEO';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 const Shop = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('default');
-  const [showFilters, setShowFilters] = useState(true);
 
   const filteredProducts = useMemo(() => {
     let result = categoryParam ? getProductsByCategory(categoryParam) : products;
@@ -106,7 +106,7 @@ const Shop = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="flex gap-8">
             {/* Sidebar Filters */}
-            <aside className={`${showFilters ? 'w-64 flex-shrink-0' : 'hidden'} hidden lg:block`}>
+            <aside className="w-64 flex-shrink-0 hidden lg:block">
               <div className="bg-card rounded-lg p-6 shadow-brand-sm sticky top-4">
                 {/* Search */}
                 <div className="mb-6">
@@ -160,14 +160,66 @@ const Shop = () => {
             <div className="flex-1">
               {/* Mobile Filter Toggle */}
               <div className="lg:hidden mb-4 flex gap-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setShowFilters(!showFilters)}
-                >
-                  <SlidersHorizontal size={16} className="mr-2" />
-                  Filters
-                </Button>
+                <Sheet>
+                  <SheetTrigger asChild>
+                    <Button variant="outline" size="sm">
+                      <SlidersHorizontal size={16} className="mr-2" />
+                      Filters
+                    </Button>
+                  </SheetTrigger>
+                  <SheetContent side="left" className="w-72">
+                    <SheetHeader>
+                      <SheetTitle>Filters</SheetTitle>
+                    </SheetHeader>
+                    <div className="mt-6">
+                      {/* Mobile Search */}
+                      <div className="mb-6">
+                        <div className="relative">
+                          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={18} />
+                          <Input
+                            placeholder="Search products..."
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            className="pl-10"
+                          />
+                        </div>
+                      </div>
+
+                      {/* Mobile Categories */}
+                      <div>
+                        <h3 className="font-bold text-foreground mb-4">Research Categories</h3>
+                        <ul className="space-y-2">
+                          <li>
+                            <button
+                              onClick={() => handleCategoryClick(null)}
+                              className={`text-sm w-full text-left py-2 transition-colors ${
+                                !categoryParam 
+                                  ? 'text-accent font-medium' 
+                                  : 'text-foreground hover:text-accent'
+                              }`}
+                            >
+                              All Products
+                            </button>
+                          </li>
+                          {categories.map((category) => (
+                            <li key={category.id}>
+                              <button
+                                onClick={() => handleCategoryClick(category.slug)}
+                                className={`text-sm w-full text-left py-2 transition-colors ${
+                                  categoryParam === category.slug 
+                                    ? 'text-accent font-medium' 
+                                    : 'text-foreground hover:text-accent'
+                                }`}
+                              >
+                                {category.name}
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </SheetContent>
+                </Sheet>
                 {categoryParam && (
                   <Button
                     variant="ghost"
