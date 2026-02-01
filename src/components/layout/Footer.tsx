@@ -14,7 +14,7 @@ const Footer = () => {
     to: '/faq',
     label: 'FAQ'
   }, {
-    to: '/lab-results',
+    to: '/COA',
     label: 'Lab Results'
   }, {
     to: '/privacy',

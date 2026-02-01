@@ -32,7 +32,7 @@ const HeroSection = () => {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white text-white bg-white/10 hover:bg-white hover:text-primary">
-              <Link to="/lab-results">View Lab Results</Link>
+              <Link to="/COA">View Lab Results</Link>
             </Button>
           </div>
         </div>
